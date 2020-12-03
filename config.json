@@ -1,0 +1,42 @@
+{
+    "server": {
+        "port": 3008
+    },
+    "app": {
+        "apiPrefix" : "/korebotkit",
+        "url":"https://versusvirus-botkit.herokuapp.com"
+    },
+    "credentials": {
+        "apikey": "<bot id>",
+        "appId": "<bot client id>",
+        "botId": "<bot stream id>",
+        "botName": "<bot name>"
+    },
+    "servicenow": {
+        "host": "<SNOW host>",
+        "userId" : "<SNOW bot user>",
+        "authorization": "<Basic auth>",
+        "queueId": "<SNOW chat queue>",
+        "welcomeMessages" : ["Thank you for contacting support. Someone will be with you shortly to assist you", "How can we help you?"]
+    },
+    "redis": {
+        "options": {
+            "host": "<redis instance host>",
+            "port": "<redis port>",
+            "user":"<redis user id>",
+            "password":"<redis password>"
+            
+        },
+        "available": true
+    },
+    "twilio":{
+        "messagingServiceSid" : "<twiliomessaging>",
+        "accountSid" : "<twilioAccountSID>",
+        "authToken" : "<twilioAuthToken>"
+    },
+    "examples" : {
+        "mockServicesHost"  : "http://localhost:8004"
+    },
+    "supportsMessageAck": true,
+    "ignore_auth_urls":["/korebotkit/gethistory"]
+}
